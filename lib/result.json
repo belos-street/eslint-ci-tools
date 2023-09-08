@@ -1,0 +1,1067 @@
+[
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/.eslintrc.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'module' is not defined.",
+        "line": 1,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 1,
+        "endColumn": 7
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "module.exports = {\n    \"env\": {\n        \"browser\": true,\n        \"es2021\": true\n    },\n    \"extends\": [\n        \"eslint:recommended\",\n        \"plugin:react/recommended\"\n    ],\n    \"overrides\": [\n        {\n            \"env\": {\n                \"node\": true\n            },\n            \"files\": [\n                \".eslintrc.{js,cjs}\"\n            ],\n            \"parserOptions\": {\n                \"sourceType\": \"script\"\n            }\n        }\n    ],\n    \"parserOptions\": {\n        \"ecmaVersion\": \"latest\",\n        \"sourceType\": \"module\"\n    },\n    \"plugins\": [\n        \"react\"\n    ],\n    \"rules\": {\n    }\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/component/ChartContainer/index.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useState' is defined but never used.",
+        "line": 1,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'title' is missing in props validation",
+        "line": 7,
+        "column": 16,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 7,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'className' is missing in props validation",
+        "line": 9,
+        "column": 35,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 9,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'children' is missing in props validation",
+        "line": 9,
+        "column": 55,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 9,
+        "endColumn": 63
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function ChartContainer(props) {\n  return (\n    <section className='fx fd-c'>\n      <div className='title fx'>\n        <div className='tag-icon img' />\n        {props.title}\n      </div>\n      <div className={`f1 ${props.className}`}>{props.children}</div>\n    </section>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/component/SecBox/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'index' is missing in props validation",
+        "line": 6,
+        "column": 55,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 6,
+        "endColumn": 60
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'icon' is missing in props validation",
+        "line": 9,
+        "column": 52,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 9,
+        "endColumn": 56
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'title' is missing in props validation",
+        "line": 10,
+        "column": 23,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 10,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'children' is missing in props validation",
+        "line": 12,
+        "column": 16,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 12,
+        "endColumn": 24
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react'\n\nexport function SecBox(props) {\n  return (\n    <section className='sec-box'>\n      <div className='page-index fx ai-c jc-c'>{props.index}</div>\n      <div className='sb-container'>\n        <div className='sb-title fx ai-c'>\n          <div className={`title-icon icon-${props.icon}`}></div>\n          <div>{props.title}</div>\n        </div>\n        {props.children}\n      </div>\n    </section>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/component/TableSort/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'stepNum' is missing in props validation",
+        "line": 14,
+        "column": 23,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 14,
+        "endColumn": 30
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'clickSort' is missing in props validation",
+        "line": 34,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 34,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'stepNum' is missing in props validation",
+        "line": 43,
+        "column": 13,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 43,
+        "endColumn": 20
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'name' is missing in props validation",
+        "line": 47,
+        "column": 14,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 47,
+        "endColumn": 18
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\n\nconst Color = {\n  Gary: 'gray',\n  Black: 'black'\n}\nconst STEP = {\n  INIT: 0,\n  UP: 1,\n  DOWN: 2\n}\n\nexport function TableSort(props) {\n  let StepNum = props.stepNum || STEP.INIT\n  const [upColor, setUpColor] = useState(Color.Gary)\n  const [downColor, setDownColor] = useState(Color.Gary)\n\n  function changeState() {\n    if (StepNum === STEP.INIT) {\n      setUpColor(Color.Gary)\n      setDownColor(Color.Gary)\n    } else if (StepNum === STEP.UP) {\n      setUpColor(Color.Black)\n      setDownColor(Color.Gary)\n    } else if (StepNum === STEP.DOWN) {\n      setUpColor(Color.Gary)\n      setDownColor(Color.Black)\n    }\n  }\n\n  const setStep = () => {\n    StepNum !== STEP.DOWN ? StepNum++ : (StepNum = STEP.INIT)\n    changeState()\n    props.clickSort(StepNum)\n  }\n\n  useEffect(() => {\n    changeState()\n  }, [])\n\n  useEffect(() => {\n    changeState()\n  }, [props.stepNum])\n\n  return (\n    <div className='fx ai-c'>\n      {props.name}\n      <svg onClick={setStep} className='cp'>\n        <path d='M4 2 L0 8 L8 8 Z' fill={upColor} />\n        <path d='M4 15 L0 9 L8 9 Z' fill={downColor} />\n      </svg>\n    </div>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/component/WarnBox/index.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useState' is defined but never used.",
+        "line": 1,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'color' is missing in props validation",
+        "line": 5,
+        "column": 49,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 5,
+        "endColumn": 54
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'level' is missing in props validation",
+        "line": 10,
+        "column": 39,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 10,
+        "endColumn": 44
+      },
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'value' is missing in props validation",
+        "line": 11,
+        "column": 39,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 11,
+        "endColumn": 44
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function WarnBox(props) {\n  return (\n    <div className='warn-box fx'>\n      <div className={`box fx jc-c ai-c ${props.color}`}>\n        <div className='icon img' />\n      </div>\n      <div className='line' />\n      <div className='fx fd-c jc-c'>\n        <div className='level'>{props.level} :</div>\n        <div className='value'>{props.value}</div>\n      </div>\n    </div>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/lib/data.js",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'report_json' is assigned a value but never used.",
+        "line": 1,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 18
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const report_json = { \"project_info\": { \"report_name\": \"测试项目-测试产品-测试版本1.0\", \"report_time\": \"2022-01-26\" }, \"statistics\": { \"vun\": { \"low\": 0, \"mid\": 1, \"high\": 0, \"super\": 0, \"total\": 1, \"is_public_poc\": 0 }, \"strategy_alert\": { \"mid\": 0, \"low\": 0, \"high\": 0, \"total\": 0 }, \"license\": { \"component_license\": 3, \"file_license\": 2, \"project_license\": 1 }, \"file\": { \"is_copyrights\": 256, \"is_not_copyrights\": 152 }, \"dependency\": { \"indirect\": 117, \"direct\": 13 }, \"component\": { \"count\": 12, \"risk_count\": 1 } }, \"strategy_info\": [], \"vun_info\": { \"cve_info_list\": [{ \"cve_num\": \"CVE-2020-11023\", \"cnnvd_announcement\": \"目前厂商已发布升级补丁以修复漏洞，补丁获取链接：https://jquery.com/upgrade-guide/3.5/\" }], \"vun_info_list\": [{ \"cve_num\": \"CVE-2020-11023\", \"cnnvd_num\": \"CNNVD-202004-2420\", \"cnnvd_threat\": \"远程\", \"is_public_poc\": \"是\", \"cwe_id\": \"CWE-79\", \"cnnvd_vul_name\": \"jQuery 跨站脚本漏洞\", \"cvss3_base_score\": 6.1, \"cvss3_base_level\": \"中危\", \"component_count\": 1, \"component_info_list\": [{ \"id\": \"282ec8e9-ff46-49ee-b1de-73c21154b1bc\", \"component\": \"jquery\", \"url\": \"https://code.jquery.com/jquery-1.9.1.min.js\", \"version\": \"1.9.1.min\" }], \"id\": \"a2918dd9-aa7d-46fd-a245-cf65f657e5ec\" }] }, \"component_info\": [{ \"component\": \"eureka\", \"version\": \"1.10.11\", \"url\": \"https://github.com/netflix/eureka\", \"vendor\": \"Netflix\", \"latest\": \"1.10.15\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"269c8542-5f7d-4610-abcb-820f140cd9ac\", \"vun_info\": [] }, { \"component\": \"sevenzip\", \"version\": \"0.0\", \"url\": \"https://sourceforge.net/projects/sevenzip\", \"vendor\": \"sevenzip\", \"latest\": \"0.0\", \"is_latest\": \"是\", \"license_info\": \"\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"647cc25a-c950-4987-9712-a0e328179df3\", \"vun_info\": [] }, { \"component\": \"eureka-client\", \"version\": \"1.1.135\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.9.9\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"6352c66e-ab3e-42ce-9949-a0060f83f42f\", \"vun_info\": [] }, { \"component\": \"ClearCore-library\", \"version\": \"1.1.103\", \"url\": \"https://github.com/teknic-inc/clearcore-library\", \"vendor\": \"Teknic-Inc\", \"latest\": \"1.1.103\", \"is_latest\": \"是\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"d015e816-9ea3-4778-946d-1b98fabb7407\", \"vun_info\": [] }, { \"component\": \"hi3798mv100\", \"version\": \"0.1\", \"url\": \"https://github.com/glinuz/hi3798mv100\", \"vendor\": \"glinuz\", \"latest\": \"0d5d4ef\", \"is_latest\": \"否\", \"license_info\": \"MIT\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"3bbf24fb-43e6-45e6-80c5-27bbdf908ffe\", \"vun_info\": [] }, { \"component\": \"eureka-client-jersey2\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client-jersey2\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.9.9\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"482b30bf-b666-4d8d-a4d5-628e9020add6\", \"vun_info\": [] }, { \"component\": \"jquery\", \"version\": \"1.9.1.min\", \"url\": \"https://code.jquery.com/jquery-1.9.1.min.js\", \"vendor\": \"jquery\", \"latest\": \"1.9.1.min\", \"is_latest\": \"是\", \"license_info\": \"MIT\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 1, \"id\": \"6383aac7-d583-4342-9f5f-6e8703f73c28\", \"vun_info\": [{ \"cve_num\": \"CVE-2020-11023\", \"cnnvd_num\": \"CNNVD-202004-2420\", \"cnnvd_threat\": \"远程\", \"is_public_poc\": 0, \"cnnvd_vul_name\": \"jQuery 跨站脚本漏洞\", \"cvss3_base_level\": \"中危\", \"id\": \"a72c5f71-9114-4d3b-af8a-b693a616d525\" }] }, { \"component\": \"eureka-client\", \"version\": \"1.1.136\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.9.9\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"b8f84aae-2987-4d2d-b6a6-d1696ad1a94e\", \"vun_info\": [] }, { \"component\": \"eureka-server\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-server\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.9.9\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"86774d75-b25a-418b-be89-12869cc02429\", \"vun_info\": [] }, { \"component\": \"eureka-core\", \"version\": \"1.1.131\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-core\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.9.9\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"8d0fce9d-ac50-4953-b80f-3c8ef0daf136\", \"vun_info\": [] }, { \"component\": \"eureka-client\", \"version\": \"1.10.12\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.10.15\", \"is_latest\": \"否\", \"license_info\": \"Apache-2.0,The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 100, \"matched_way\": \"文件\", \"vun_count\": 0, \"id\": \"5424bfeb-a1f2-4efa-b85c-af1c1f656637\", \"vun_info\": [] }, { \"component\": \"eureka-client\", \"version\": \"1.10.10\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\", \"vendor\": \"com.netflix.eureka\", \"latest\": \"1.10.15\", \"is_latest\": \"否\", \"license_info\": \"The Apache Software License; Version 2.0\", \"cryptography_info\": \"\", \"matched\": 99, \"matched_way\": \"代码片段\", \"vun_count\": 0, \"id\": \"f5b0e71a-b150-415b-89b9-4155a611ae0a\", \"vun_info\": [] }], \"license_info\": { \"file_license_list\": [{ \"license_name\": \"Apache-2.0\", \"tag\": \"Permissive,OSI-Approved,FSF-Approved Free\", \"scan_lic_info\": [{ \"file_name\": \"DiscoveryManager.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/DiscoveryManager.java\" }, { \"file_name\": \"ClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/ClusterResolver.java\" }, { \"file_name\": \"SessionedEurekaHttpClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/SessionedEurekaHttpClient.java\" }, { \"file_name\": \"AbstractJersey2EurekaHttpClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client-jersey2/src/main/java/com/netflix/discovery/shared/transport/jersey2/AbstractJersey2EurekaHttpClient.java\" }, { \"file_name\": \"InstanceInfoJsonBeanSerializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/InstanceInfoJsonBeanSerializer.java\" }, { \"file_name\": \"ExceptionsMetric.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/ExceptionsMetric.java\" }, { \"file_name\": \"ThresholdLevelsMetric.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/ThresholdLevelsMetric.java\" }, { \"file_name\": \"EurekaEntityTransformers.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/EurekaEntityTransformers.java\" }, { \"file_name\": \"ClusterResolverFactory.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/ClusterResolverFactory.java\" }, { \"file_name\": \"ZoneAffinityClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/aws/ZoneAffinityClusterResolver.java\" }, { \"file_name\": \"RedirectingEurekaHttpClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/RedirectingEurekaHttpClient.java\" }, { \"file_name\": \"Converters.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/Converters.java\" }, { \"file_name\": \"DnsServiceImpl.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/dns/DnsServiceImpl.java\" }, { \"file_name\": \"TrafficShaper.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/util/batcher/TrafficShaper.java\" }, { \"file_name\": \"InstanceInfo.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/InstanceInfo.java\" }, { \"file_name\": \"ClusterResolverException.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/ClusterResolverException.java\" }, { \"file_name\": \"DefaultEndpoint.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/DefaultEndpoint.java\" }, { \"file_name\": \"EurekaClientConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/EurekaClientConfig.java\" }, { \"file_name\": \"DefaultEurekaClientConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/DefaultEurekaClientConfig.java\" }, { \"file_name\": \"Lease.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/lease/Lease.java\" }, { \"file_name\": \"Pair.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/Pair.java\" }, { \"file_name\": \"EurekaInstanceConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/EurekaInstanceConfig.java\" }, { \"file_name\": \"DnsTxtRecordClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/aws/DnsTxtRecordClusterResolver.java\" }, { \"file_name\": \"ServoUtil.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/ServoUtil.java\" }, { \"file_name\": \"InstanceInfoJsonMixIn.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/mixin/InstanceInfoJsonMixIn.java\" }, { \"file_name\": \"Applications.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/Applications.java\" }, { \"file_name\": \"PeerAwareInstanceRegistry.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/registry/PeerAwareInstanceRegistry.java\" }, { \"file_name\": \"SystemUtil.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/SystemUtil.java\" }, { \"file_name\": \"MyDataCenterInstanceConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/MyDataCenterInstanceConfig.java\" }, { \"file_name\": \"EurekaEndpoint.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/EurekaEndpoint.java\" }, { \"file_name\": \"LookupService.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/LookupService.java\" }, { \"file_name\": \"EurekaServerContextHolder.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/EurekaServerContextHolder.java\" }, { \"file_name\": \"ISerializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/provider/ISerializer.java\" }, { \"file_name\": \"StringUtil.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/StringUtil.java\" }, { \"file_name\": \"ApplicationsJsonMixIn.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/mixin/ApplicationsJsonMixIn.java\" }, { \"file_name\": \"SecureVIPResource.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/resources/SecureVIPResource.java\" }, { \"file_name\": \"EntityBodyConverter.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/EntityBodyConverter.java\" }, { \"file_name\": \"JsonXStream.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/JsonXStream.java\" }, { \"file_name\": \"EurekaJacksonXmlModifiers.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/EurekaJacksonXmlModifiers.java\" }, { \"file_name\": \"MetricsCollectingEurekaHttpClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/MetricsCollectingEurekaHttpClient.java\" }, { \"file_name\": \"ExampleEurekaClient.java\", \"file_path\": \"eureka-1.10.17/eureka-examples/src/main/java/com/netflix/eureka/ExampleEurekaClient.java\" }, { \"file_name\": \"DiscoveryJerseyProvider.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/provider/DiscoveryJerseyProvider.java\" }, { \"file_name\": \"BackupRegistry.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/BackupRegistry.java\" }, { \"file_name\": \"AbstractInstanceConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/AbstractInstanceConfig.java\" }, { \"file_name\": \"V1AwareInstanceInfoConverter.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/V1AwareInstanceInfoConverter.java\" }, { \"file_name\": \"ASGResource.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/resources/ASGResource.java\" }, { \"file_name\": \"ApplicationsXmlMixIn.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/mixin/ApplicationsXmlMixIn.java\" }, { \"file_name\": \"EurekaServerContext.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/EurekaServerContext.java\" }, { \"file_name\": \"Serializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/provider/Serializer.java\" }, { \"file_name\": \"EurekaClientNames.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/EurekaClientNames.java\" }, { \"file_name\": \"AmazonInfo.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/AmazonInfo.java\" }, { \"file_name\": \"ApplicationInfoManager.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/ApplicationInfoManager.java\" }, { \"file_name\": \"LeaseManager.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/lease/LeaseManager.java\" }, { \"file_name\": \"EurekaBootStrap.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/EurekaBootStrap.java\" }, { \"file_name\": \"ApplicationsJsonBeanSerializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/ApplicationsJsonBeanSerializer.java\" }, { \"file_name\": \"LeaseInfo.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/LeaseInfo.java\" }, { \"file_name\": \"SimpleEurekaHttpServer.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/main/java/com/netflix/discovery/shared/transport/SimpleEurekaHttpServer.java\" }, { \"file_name\": \"PortWrapperXmlMixIn.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/mixin/PortWrapperXmlMixIn.java\" }, { \"file_name\": \"HealthCheckCallback.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/HealthCheckCallback.java\" }, { \"file_name\": \"Application.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/Application.java\" }, { \"file_name\": \"Auto.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/Auto.java\" }, { \"file_name\": \"InstanceInfoGeneratorTest.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/test/java/com/netflix/discovery/util/InstanceInfoGeneratorTest.java\" }, { \"file_name\": \"EurekaJsonJacksonCodec.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/EurekaJsonJacksonCodec.java\" }, { \"file_name\": \"ExampleEurekaService.java\", \"file_path\": \"eureka-1.10.17/eureka-examples/src/main/java/com/netflix/eureka/ExampleEurekaService.java\" }, { \"file_name\": \"RateLimiter.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/RateLimiter.java\" }, { \"file_name\": \"EurekaXmlJacksonCodec.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/EurekaXmlJacksonCodec.java\" }, { \"file_name\": \"TransportException.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/TransportException.java\" }, { \"file_name\": \"EurekaHttpRequest.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/main/java/com/netflix/discovery/shared/transport/EurekaHttpRequest.java\" }, { \"file_name\": \"PropertiesInstanceConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/PropertiesInstanceConfig.java\" }, { \"file_name\": \"RateLimitingFilter.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/RateLimitingFilter.java\" }, { \"file_name\": \"EurekaTransportEventListener.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/main/java/com/netflix/discovery/shared/transport/EurekaTransportEventListener.java\" }, { \"file_name\": \"EurekaHttpClients.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/EurekaHttpClients.java\" }, { \"file_name\": \"JerseyApplicationClientTest.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/test/java/com/netflix/discovery/shared/transport/jersey/JerseyApplicationClientTest.java\" }, { \"file_name\": \"ServerStatusEvaluators.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/ServerStatusEvaluators.java\" }, { \"file_name\": \"TransportUtils.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/TransportUtils.java\" }, { \"file_name\": \"ApacheHttpClientConnectionCleaner.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/jersey/ApacheHttpClientConnectionCleaner.java\" }, { \"file_name\": \"PortWrapperXmlDeserializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/PortWrapperXmlDeserializer.java\" }, { \"file_name\": \"DiscoveryJerseyProviderTest.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/test/java/com/netflix/discovery/provider/DiscoveryJerseyProviderTest.java\" }, { \"file_name\": \"InstanceInfoXmlBeanSerializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/InstanceInfoXmlBeanSerializer.java\" }, { \"file_name\": \"StaticClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/StaticClusterResolver.java\" }, { \"file_name\": \"Version.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/Version.java\" }, { \"file_name\": \"DataCenterInfo.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/DataCenterInfo.java\" }, { \"file_name\": \"EurekaEntityFunctions.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/util/EurekaEntityFunctions.java\" }, { \"file_name\": \"SimpleEurekaHttpServerResource.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/main/java/com/netflix/discovery/junit/resource/SimpleEurekaHttpServerResource.java\" }, { \"file_name\": \"ApplicationsJacksonBuilder.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/builder/ApplicationsJacksonBuilder.java\" }, { \"file_name\": \"TaskDispatchersTest.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/test/java/com/netflix/eureka/util/batcher/TaskDispatchersTest.java\" }, { \"file_name\": \"ApplicationsXmlBeanSerializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/ApplicationsXmlBeanSerializer.java\" }, { \"file_name\": \"StringInterningAmazonInfoBuilder.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/builder/StringInterningAmazonInfoBuilder.java\" }, { \"file_name\": \"StatusResource.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/resources/StatusResource.java\" }, { \"file_name\": \"ReloadingClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/ReloadingClusterResolver.java\" }, { \"file_name\": \"SimpleEurekaHttpServerTest.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/test/java/com/netflix/discovery/shared/transport/SimpleEurekaHttpServerTest.java\" }, { \"file_name\": \"ApplicationsXmlJacksonBuilder.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/builder/ApplicationsXmlJacksonBuilder.java\" }, { \"file_name\": \"VIPResource.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/resources/VIPResource.java\" }, { \"file_name\": \"ApplicationXmlMixIn.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/mixin/ApplicationXmlMixIn.java\" }, { \"file_name\": \"XmlXStream.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/XmlXStream.java\" }, { \"file_name\": \"ApplicationXmlDeserializer.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/converters/jackson/serializer/ApplicationXmlDeserializer.java\" }, { \"file_name\": \"DnsClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/DnsClusterResolver.java\" }, { \"file_name\": \"JerseyEurekaHttpClientFactory.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/jersey/JerseyEurekaHttpClientFactory.java\" }, { \"file_name\": \"PeerReplicationResource.java\", \"file_path\": \"eureka-1.10.17/eureka-core/src/main/java/com/netflix/eureka/resources/PeerReplicationResource.java\" }, { \"file_name\": \"JerseyApplicationClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/jersey/JerseyApplicationClient.java\" }, { \"file_name\": \"EurekaHttpClientCompatibilityTestSuite.java\", \"file_path\": \"eureka-1.10.17/eureka-test-utils/src/main/java/com/netflix/discovery/shared/transport/EurekaHttpClientCompatibilityTestSuite.java\" }, { \"file_name\": \"HealthCheckResource.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/HealthCheckResource.java\" }, { \"file_name\": \"EurekaHttpClientFactory.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/EurekaHttpClientFactory.java\" }, { \"file_name\": \"CloudInstanceConfig.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/appinfo/CloudInstanceConfig.java\" }, { \"file_name\": \"LegacyClusterResolver.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/resolver/LegacyClusterResolver.java\" }, { \"file_name\": \"RetryableEurekaHttpClient.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/RetryableEurekaHttpClient.java\" }, { \"file_name\": \"DnsService.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/dns/DnsService.java\" }, { \"file_name\": \"EurekaHttpClientDecorator.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/EurekaHttpClientDecorator.java\" }, { \"file_name\": \"ServerStatusEvaluator.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/decorator/ServerStatusEvaluator.java\" }, { \"file_name\": \"EurekaHttpResponse.java\", \"file_path\": \"eureka-1.10.17/eureka-client/src/main/java/com/netflix/discovery/shared/transport/EurekaHttpResponse.java\" }], \"file_count\": 110, \"id\": \"8c29fdd6-6fb6-421d-a5be-1c1d07ed54ae\" }, { \"license_name\": \"MIT\", \"tag\": \"Permissive,OSI-Approved,FSF-Approved Free\", \"scan_lic_info\": [{ \"file_name\": \"jquery-ui-1.7.2.custom.min.js\", \"file_path\": \"eureka-1.10.17/eureka-resources/src/main/resources/js/jquery-ui-1.7.2.custom.min.js\" }, { \"file_name\": \"jquery.dataTables.js\", \"file_path\": \"eureka-1.10.17/eureka-resources/src/main/resources/js/jquery.dataTables.js\" }, { \"file_name\": \"jquery-1.11.1.js\", \"file_path\": \"eureka-1.10.17/eureka-resources/src/main/resources/js/jquery-1.11.1.js\" }], \"file_count\": 3, \"id\": \"b2bd776b-ae2b-4673-ba34-f817e854cc9d\" }], \"component_license_list\": [{ \"tag\": \"Permissive,OSI-Approved,FSF-Approved Free\", \"license_name\": \"Apache-2.0\", \"component_info\": [{ \"component\": \"eureka\", \"version\": \"1.10.11\", \"url\": \"https://github.com/netflix/eureka\" }, { \"component\": \"eureka-client\", \"version\": \"1.1.135\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }, { \"component\": \"ClearCore-library\", \"version\": \"1.1.103\", \"url\": \"https://github.com/teknic-inc/clearcore-library\" }, { \"component\": \"eureka-client-jersey2\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client-jersey2\" }, { \"component\": \"eureka-client\", \"version\": \"1.1.136\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }, { \"component\": \"eureka-server\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-server\" }, { \"component\": \"eureka-core\", \"version\": \"1.1.131\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-core\" }, { \"component\": \"eureka-client\", \"version\": \"1.10.12\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }], \"component_count\": 8, \"id\": \"ed062728-9214-4236-ba02-785c37cf7213\" }, { \"tag\": \"Permissive,OSI-Approved,FSF-Approved Free\", \"license_name\": \"MIT\", \"component_info\": [{ \"component\": \"hi3798mv100\", \"version\": \"0.1\", \"url\": \"https://github.com/glinuz/hi3798mv100\" }, { \"component\": \"jquery\", \"version\": \"1.9.1.min\", \"url\": \"https://code.jquery.com/jquery-1.9.1.min.js\" }], \"component_count\": 2, \"id\": \"233aa13e-cfc9-4509-a67c-a8ef92aae621\" }, { \"tag\": \"\", \"license_name\": \"The Apache Software License; Version 2.0\", \"component_info\": [{ \"component\": \"eureka\", \"version\": \"1.10.11\", \"url\": \"https://github.com/netflix/eureka\" }, { \"component\": \"eureka-client\", \"version\": \"1.1.135\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }, { \"component\": \"ClearCore-library\", \"version\": \"1.1.103\", \"url\": \"https://github.com/teknic-inc/clearcore-library\" }, { \"component\": \"eureka-client-jersey2\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client-jersey2\" }, { \"component\": \"eureka-client\", \"version\": \"1.1.136\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }, { \"component\": \"eureka-server\", \"version\": \"1.10.0\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-server\" }, { \"component\": \"eureka-core\", \"version\": \"1.1.131\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-core\" }, { \"component\": \"eureka-client\", \"version\": \"1.10.12\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }, { \"component\": \"eureka-client\", \"version\": \"1.10.10\", \"url\": \"https://mvnrepository.com/artifact/com.netflix.eureka/eureka-client\" }], \"component_count\": 9, \"id\": \"e37cd632-ac23-4546-b7d8-018a3995b617\" }], \"project_license_list\": [{ \"tag\": \"Permissive,OSI-Approved,FSF-Approved Free\", \"license_name\": \"apache-2.0\", \"license_file_path\": \"/7881d91a-d723-49b9-9246-b34b8b3262a4/eureka-1.10.17/LICENSE\", \"id\": \"5d2f16ed-9fa2-4468-83d8-25ea83aeaf00\" }] }, \"dependency_info_list\": [{ \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.155\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-bundle\", \"dependency_version\": \"1.9.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servo-core\", \"dependency_version\": \"0.8.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jsr311-api\", \"dependency_version\": \"1.1.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"slf4j-log4j12\", \"dependency_version\": \"1.6.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.14\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius2-core\", \"dependency_version\": \"2.1.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-core\", \"dependency_version\": \"1.11.277\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-server\", \"dependency_version\": \"1.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-ec2\", \"dependency_version\": \"1.11.277\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jetty\", \"dependency_version\": \"6.1H.22\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"mockito-core\", \"dependency_version\": \"1.10.19\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-core\", \"dependency_version\": \"1.19.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-sts\", \"dependency_version\": \"1.11.277\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.10.12\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius-core\", \"dependency_version\": \"0.7.6\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.1.155\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.10.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jettison\", \"dependency_version\": \"1.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"governator\", \"dependency_version\": \"1.17.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"slf4j-simple\", \"dependency_version\": \"1.7.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.10.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"netflix-eventbus\", \"dependency_version\": \"0.1.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-core\", \"dependency_version\": \"1.9.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius2-guice\", \"dependency_version\": \"2.1.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core-jersey2\", \"dependency_version\": \"1.10.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"httpclient\", \"dependency_version\": \"4.5.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client-jersey2\", \"dependency_version\": \"1.10.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"mockserver-netty\", \"dependency_version\": \"3.9.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.10.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servlet-api\", \"dependency_version\": \"2.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.10.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-servlet\", \"dependency_version\": \"1.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xercesImpl\", \"dependency_version\": \"2.4.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"governator\", \"dependency_version\": \"1.2.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"compactmap\", \"dependency_version\": \"2.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.10.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"ribbon-httpclient\", \"dependency_version\": \"0.3.12\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-core\", \"dependency_version\": \"2.9.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"governator\", \"dependency_version\": \"1.2.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"asm\", \"dependency_version\": \"3.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk\", \"dependency_version\": \"1.3.27\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"slf4j-simple\", \"dependency_version\": \"1.7.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-core\", \"dependency_version\": \"1.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-autoscaling\", \"dependency_version\": \"1.9.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.10.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"httpclient\", \"dependency_version\": \"4.2.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.10.15\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.143\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servlet-api\", \"dependency_version\": \"2.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.16\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.131\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.17\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-client\", \"dependency_version\": \"2.23.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius-core\", \"dependency_version\": \"0.3.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"httpclient\", \"dependency_version\": \"4.1.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-sts\", \"dependency_version\": \"1.9.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius2-api\", \"dependency_version\": \"2.1.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-autoscaling\", \"dependency_version\": \"1.11.277\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.1.143\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"junit\", \"dependency_version\": \"4.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-client\", \"dependency_version\": \"1.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jsr305\", \"dependency_version\": \"3.0.2\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"mockito-core\", \"dependency_version\": \"1.9.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"blitz4j\", \"dependency_version\": \"1.34\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"woodstox-core\", \"dependency_version\": \"5.3.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client-jersey2\", \"dependency_version\": \"1.10.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core-jersey2\", \"dependency_version\": \"1.10.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.103\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-dataformat-xml\", \"dependency_version\": \"2.9.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-ec2\", \"dependency_version\": \"1.9.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-dataformat-xml\", \"dependency_version\": \"2.9.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.10.14\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"compactmap\", \"dependency_version\": \"1.2.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-apache-client4\", \"dependency_version\": \"1.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"ribbon-httpclient\", \"dependency_version\": \"0.3.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"aws-java-sdk-route53\", \"dependency_version\": \"1.11.277\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.136\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servo-core\", \"dependency_version\": \"0.4.36\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"assertj-core\", \"dependency_version\": \"3.11.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.1.103\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.13\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-test-utils\", \"dependency_version\": \"1.9.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.10.11\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"junit\", \"dependency_version\": \"4.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-apache-client4\", \"dependency_version\": \"1.8\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.10.12\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-apache-client4\", \"dependency_version\": \"1.19.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"commons-configuration\", \"dependency_version\": \"1.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jettison\", \"dependency_version\": \"1.3.7\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-databind\", \"dependency_version\": \"2.9.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-core\", \"dependency_version\": \"1.10.14\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"woodstox-core-asl\", \"dependency_version\": \"4.4.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius-core\", \"dependency_version\": \"0.6.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"archaius-core\", \"dependency_version\": \"0.6.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"wiremock-jre8\", \"dependency_version\": \"2.25.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servo-core\", \"dependency_version\": \"0.7.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-core\", \"dependency_version\": \"2.9.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client-jersey2\", \"dependency_version\": \"1.10.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"guice\", \"dependency_version\": \"4.1.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-databind\", \"dependency_version\": \"2.9.10.6\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"servo-core\", \"dependency_version\": \"0.12.21\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-apache-connector\", \"dependency_version\": \"2.23.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-annotations\", \"dependency_version\": \"2.10.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-annotations\", \"dependency_version\": \"2.9.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"javax.servlet-api\", \"dependency_version\": \"4.0.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"governator\", \"dependency_version\": \"1.3.3\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"netflix-eventbus\", \"dependency_version\": \"0.3.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.10\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client-jersey2\", \"dependency_version\": \"1.10.14\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-core\", \"dependency_version\": \"2.10.5\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"eureka-client\", \"dependency_version\": \"1.1.159\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jersey-client\", \"dependency_version\": \"1.19.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-databind\", \"dependency_version\": \"2.10.5.1\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jettison\", \"dependency_version\": \"1.4.0\", \"dependency_type\": \"间接依赖\" }, { \"dependency_component\": \"jackson-annotations\", \"dependency_version\": \"2.9.4\", \"dependency_type\": \"间接依赖\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"jersey-client\", \"dependency_version\": \"${jerseyVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"netflix-eventbus\", \"dependency_version\": \"0.3.0\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"gradle-extra-configurations-plugin\", \"dependency_version\": \"2.2.+\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"jsr305\", \"dependency_version\": \"${jsr305Version}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"xstream\", \"dependency_version\": \"1.4.18\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"guice\", \"dependency_version\": \"${guiceVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"jersey-apache-client4\", \"dependency_version\": \"${jerseyVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"httpclient\", \"dependency_version\": \"${apacheHttpClientVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"servo-core\", \"dependency_version\": \"${servoVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"jersey-core\", \"dependency_version\": \"${jerseyVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"jsr311-api\", \"dependency_version\": \"1.1.1\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"archaius-core\", \"dependency_version\": \"${archaiusVersion}\\\"\" }, { \"dependency_type\": \"直接依赖\", \"dependency_component\": \"commons-configuration\", \"dependency_version\": \"${commonsConfigurationVersion}\\\"\" }] }",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/main.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'report_json' is not defined.",
+        "line": 5,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 5,
+        "endColumn": 32
+      },
+      {
+        "ruleId": "react/no-deprecated",
+        "severity": 2,
+        "message": "ReactDOM.render is deprecated since React 18.0.0, use createRoot instead, see https://reactjs.org/link/switch-to-createroot",
+        "line": 10,
+        "column": 1,
+        "nodeType": "MemberExpression",
+        "messageId": "deprecated",
+        "endLine": 10,
+        "endColumn": 16
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import './css/main.scss'\nimport './css/common.scss'\n\nimport 'default-passive-events'\nwindow.reportData = report_json\n\nimport React from 'react'\nimport ReactDOM from 'react-dom'\nimport App from './page/App.jsx'\nReactDOM.render( < App / > , document.getElementById('root'))",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/component/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 14,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 245,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\nimport { TableSort } from '../../component/TableSort/index.jsx'\n\nconst initFormData = {\n  component: '',\n  license_info: '',\n  matched: 0,\n  cryptography_info: '',\n  matched_way: 'all',\n  is_latest: 'all'\n}\n\nexport default function () {\n  const { report_name } = window.reportData.project_info\n  const { count } = window.reportData.statistics.component\n\n  const [formData, setFormData] = useState({\n    ...initFormData\n  })\n  useEffect(() => {\n    if (isNaN(formData.matched) || formData.matched / 10 > 10 || formData.matched < 0) {\n      setFormData({\n        ...formData,\n        matched: initFormData.matched\n      })\n    }\n  }, [formData])\n\n  const [tableList, setTableList] = useState({\n    list: window.reportData.component_info\n  })\n\n  const [expandArr, setExpandArr] = useState({\n    arr: []\n  })\n\n  const [matchedSort, setMatchedSort] = useState(0)\n\n  function clickSort(_step) {\n    setMatchedSort(_step)\n    let _list = [...tableList.list]\n    if (_step === 0) {\n      filterList()\n      return\n    } else if (_step === 1) {\n      _list.sort((pre, next) => {\n        return next.matched - pre.matched\n      })\n    } else if (_step === 2) {\n      _list.sort((pre, next) => {\n        return pre.matched - next.matched\n      })\n    }\n    setTableList({ list: _list })\n  }\n\n  function queryClick() {\n    filterList()\n  }\n\n  function filterList() {\n    let tempArr = []\n    for (const item of window.reportData.component_info) {\n      if (\n        item.component.indexOf(formData.component) >= 0 &&\n        item.license_info.indexOf(formData.license_info) >= 0 &&\n        item.cryptography_info.indexOf(formData.cryptography_info) >= 0 &&\n        item.matched >= formData.matched &&\n        (item.matched_way === formData.matched_way || formData.matched_way === 'all') &&\n        (item.is_latest === formData.is_latest || formData.is_latest === 'all')\n      ) {\n        tempArr.push(item)\n      }\n    }\n    setTableList({ list: tempArr })\n  }\n\n  function initClick() {\n    setFormData(initFormData)\n    setTableList({ list: window.reportData.component_info })\n    setMatchedSort(0)\n  }\n\n  function expClick(item, key) {\n    const tempArr = expandArr.arr\n    let arrIndex = tempArr.indexOf(item[key])\n    arrIndex >= 0 ? tempArr.splice(arrIndex, 1) : tempArr.push(item[key])\n    setExpandArr({ arr: tempArr })\n  }\n\n  function tableChildRenderer(item, key) {\n    return expandArr.arr.includes(item[key]) ? (\n      <tr>\n        <td colSpan='11' className='in-td'>\n          <table cellSpacing='0'>\n            <thead>\n              <tr>\n                <th>漏洞名称</th>\n                <th>CVE编号</th>\n                <th>CNNVD编号</th>\n                <th>可利用POC</th>\n                <th>威胁类型</th>\n                <th>漏洞等级</th>\n              </tr>\n            </thead>\n            <tbody>\n              {item.vun_info.map((sonItem, index) => (\n                <tr key={index}>\n                  <td>{sonItem.cnnvd_vul_name}</td>\n                  <td>{sonItem.cve_num}</td>\n                  <td>{sonItem.cnnvd_num}</td>\n                  <td>{sonItem.is_public_poc}</td>\n                  <td>{sonItem.cnnvd_threat}</td>\n                  <td>{sonItem.cvss3_base_level}</td>\n                </tr>\n              ))}\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    ) : (\n      <></>\n    )\n  }\n\n  return (\n    <SecBox index='4' icon='component' title='组件'>\n      <div className='desc'>\n        <p>\n          在<span>{report_name}</span>\n          检测过程中检测出<span> {count} </span>个开源组件，详情如下：\n        </p>\n      </div>\n      <form className='search-box fx'>\n        <div className='form-item'>\n          <label>组件名: </label>\n          <input\n            placeholder='请输入'\n            className='width80'\n            value={formData.component}\n            onChange={(e) => setFormData({ ...formData, component: e.target.value })}></input>\n        </div>\n\n        <div className='form-item'>\n          <label>许可证: </label>\n          <input\n            placeholder='请输入'\n            className='width80'\n            value={formData.license_info}\n            onChange={(e) => setFormData({ ...formData, license_info: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>匹配度(%)≥: </label>\n          <input\n            placeholder='请输入百分比'\n            className='width80'\n            value={formData.matched}\n            onChange={(e) => setFormData({ ...formData, matched: parseFloat(e.target.value) })}></input>\n        </div>\n\n        <div className='form-item'>\n          <label>加密算法: </label>\n          <input\n            placeholder='请输入'\n            className='width80'\n            value={formData.cryptography_info}\n            onChange={(e) => setFormData({ ...formData, cryptography_info: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>匹配方式: </label>\n          <select\n            onChange={(e) => setFormData({ ...formData, matched_way: e.target.value })}\n            value={formData.matched_way}>\n            <option value='all'>全部</option>\n            <option value='文件'>文件</option>\n            <option value='代码片段'>代码片段</option>\n          </select>\n        </div>\n        <div className='form-item'>\n          <label>最新版本: </label>\n          <select onChange={(e) => setFormData({ ...formData, is_latest: e.target.value })} value={formData.is_latest}>\n            <option value='all'>全部</option>\n            <option value='是'>是</option>\n            <option value='否'>否</option>\n          </select>\n        </div>\n        <button type='button' className='btn btn-secondary' onClick={() => initClick()}>\n          重置\n        </button>\n        <button type='button' className='btn btn-primary' onClick={() => queryClick()}>\n          查询\n        </button>\n      </form>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th className='expand' />\n            <th width='7%'>组件名</th>\n            <th>组件版本</th>\n            <th>组件链接</th>\n            <th>最新版本</th>\n            <th width='7%'>是否最新版本</th>\n            <th>许可证</th>\n            <th>{<TableSort name='匹配度%' clickSort={clickSort} stepNum={matchedSort} />}</th>\n            <th width='6%'>匹配方式</th>\n            <th>加密算法</th>\n            <th>供应商</th>\n            <th width='6%'>漏洞数量</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <React.Fragment key={item.id}>\n              <tr key={index}>\n                <td className='expandBtn'>\n                  {item.vun_info.length === 0 ? (\n                    <></>\n                  ) : (\n                    <div\n                      className={expandArr.arr.includes(item.id) ? 'closed-icon' : 'expand-icon'}\n                      onClick={() => expClick(item, 'id')}\n                    />\n                  )}\n                </td>\n                <td>{item.component}</td>\n                <td>{item.version}</td>\n                <td>{item.url}</td>\n                <td>{item.latest}</td>\n                <td>{item.is_latest}</td>\n                <td>{item.license_info}</td>\n                <td>{item.matched}</td>\n                <td>{item.matched_way}</td>\n                <td>{item.cryptography_info}</td>\n                <td>{item.vendor}</td>\n                <td>{item.vun_count}</td>\n              </tr>\n              {tableChildRenderer(item, 'id')}\n            </React.Fragment>\n          ))}\n        </tbody>\n      </table>\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/depend/index.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'WarnBox' is defined but never used.",
+        "line": 3,
+        "column": 10,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 17
+      },
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 9,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 87,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\nimport { WarnBox } from '../../component/WarnBox/index.jsx'\n\nconst initFormData = {\n  dependency_type: ''\n}\n\nexport default function () {\n  const { report_name } = window.reportData.project_info\n  const { indirect, direct } = window.reportData.statistics.dependency\n\n  const [formData, setFormData] = useState({\n    ...initFormData\n  })\n  const [tableList, setTableList] = useState({\n    list: window.reportData.dependency_info_list\n  })\n\n  function queryClick() {\n    filterList()\n  }\n\n  function filterList() {\n    let tempArr = []\n    for (const item of window.reportData.dependency_info_list) {\n      if (item.dependency_type === formData.dependency_type || formData.dependency_type === 'all') {\n        tempArr.push(item)\n      }\n    }\n    setTableList({ list: tempArr })\n  }\n\n  function initClick() {\n    setFormData(initFormData)\n    setTableList({ list: window.reportData.dependency_info_list })\n  }\n\n  useEffect(() => {}, [formData])\n\n  return (\n    <SecBox index='6' icon='depend' title='依赖'>\n      <div className='desc'>\n        <p>\n          <span>{report_name}</span>检测过程中检测到 <span>{indirect + direct}</span>个依赖，其中直接依赖{' '}\n          <span>{direct}</span>个、间接依赖 <span>{indirect}</span>个，依赖详情如下\n        </p>\n      </div>\n      <form className='search-box fx'>\n        <div className='form-item'>\n          <label>依赖类型: </label>\n          <select\n            onChange={(e) => setFormData({ ...formData, dependency_type: e.target.value })}\n            value={formData.dependency_type}>\n            <option value='all'>全部</option>\n            <option value='直接依赖'>直接依赖</option>\n            <option value='间接依赖'>间接依赖</option>\n          </select>\n        </div>\n        <button type='button' className='btn btn-secondary' onClick={() => initClick()}>\n          重置\n        </button>\n        <button type='button' className='btn btn-primary' onClick={() => queryClick()}>\n          查询\n        </button>\n      </form>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th>依赖名称</th>\n            <th>依赖版本</th>\n            <th>依赖类型</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <tr key={index}>\n              <td>{item.dependency_component}</td>\n              <td>{item.dependency_version}</td>\n              <td>{item.dependency_type}</td>\n            </tr>\n          ))}\n        </tbody>\n      </table>\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/layout/main/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/prop-types",
+        "severity": 2,
+        "message": "'children' is missing in props validation",
+        "line": 4,
+        "column": 58,
+        "nodeType": "Identifier",
+        "messageId": "missingPropType",
+        "endLine": 4,
+        "endColumn": 66
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react'\n\nexport function Main(props) {\n  return <main className='main-container fx fd-c'>{props.children}</main>\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/license/component.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'count' is assigned a value but never used.",
+        "line": 3,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'risk_count' is assigned a value but never used.",
+        "line": 3,
+        "column": 18,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'setTableList' is assigned a value but never used.",
+        "line": 5,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 5,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'key' is defined but never used.",
+        "line": 20,
+        "column": 37,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 20,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "react/jsx-no-target-blank",
+        "severity": 2,
+        "message": "Using target=\"_blank\" without rel=\"noreferrer\" (which implies rel=\"noopener\") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+        "line": 38,
+        "column": 21,
+        "nodeType": "JSXOpeningElement",
+        "messageId": "noTargetBlankWithoutNoreferrer",
+        "endLine": 38,
+        "endColumn": 59,
+        "fix": {
+          "range": [
+            1185,
+            1185
+          ],
+          "text": " rel=\"noreferrer\""
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function Components() {\n  const { count, risk_count } = window.reportData.statistics.component\n\n  const [tableList, setTableList] = useState({\n    list: window.reportData.license_info.component_license_list\n  })\n\n  const [expandArr, setExpandArr] = useState({\n    arr: []\n  })\n\n  function expClick(item, key) {\n    const tempArr = expandArr.arr\n    let arrIndex = tempArr.indexOf(item[key])\n    arrIndex >= 0 ? tempArr.splice(arrIndex, 1) : tempArr.push(item[key])\n    setExpandArr({ arr: tempArr })\n  }\n\n  function tableChildRenderer(item, key) {\n    return expandArr.arr.includes(item.id) ? (\n      <tr>\n        <td colSpan='4' className='in-td'>\n          <table cellSpacing='0'>\n            <thead>\n              <tr>\n                <th>组件名</th>\n                <th>当前版本</th>\n                <th>组件链接</th>\n              </tr>\n            </thead>\n            <tbody>\n              {item.component_info.map((sonItem, index) => (\n                <tr key={index}>\n                  <td>{sonItem.component}</td>\n                  <td>{sonItem.version}</td>\n                  <td>\n                    <a href={sonItem.url} target='_blank'>\n                      {sonItem.url}\n                    </a>\n                  </td>\n                </tr>\n              ))}\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    ) : (\n      <></>\n    )\n  }\n\n  return (\n    <>\n      <div className='desc mt-20'>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          5.1 组件许可证\n        </div>\n      </div>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th className='expand' />\n            <th width='33%'>许可证名称</th>\n            <th>标签</th>\n            <th>组件数</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <React.Fragment key={item.id}>\n              <tr key={index}>\n                <td className='expandBtn'>\n                  {item.component_info.length === 0 ? (\n                    <></>\n                  ) : (\n                    <div\n                      className={expandArr.arr.includes(item.id) ? 'closed-icon' : 'expand-icon'}\n                      onClick={() => expClick(item, 'id')}\n                    />\n                  )}\n                </td>\n                <td>{item.license_name}</td>\n                <td>{item.tag}</td>\n                <td>{item.component_count}</td>\n              </tr>\n              {tableChildRenderer(item, 'id')}\n            </React.Fragment>\n          ))}\n        </tbody>\n      </table>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/license/file.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'count' is assigned a value but never used.",
+        "line": 3,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'risk_count' is assigned a value but never used.",
+        "line": 3,
+        "column": 18,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 28
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'setTableList' is assigned a value but never used.",
+        "line": 5,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 5,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'key' is defined but never used.",
+        "line": 20,
+        "column": 37,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 20,
+        "endColumn": 40
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 4,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function File() {\n  const { count, risk_count } = window.reportData.statistics.component\n\n  const [tableList, setTableList] = useState({\n    list: window.reportData.license_info.file_license_list\n  })\n\n  const [expandArr, setExpandArr] = useState({\n    arr: []\n  })\n\n  function expClick(item, key) {\n    const tempArr = expandArr.arr\n    let arrIndex = tempArr.indexOf(item[key])\n    arrIndex >= 0 ? tempArr.splice(arrIndex, 1) : tempArr.push(item[key])\n    setExpandArr({ arr: tempArr })\n  }\n\n  function tableChildRenderer(item, key) {\n    return expandArr.arr.includes(item.id) ? (\n      <tr>\n        <td colSpan='4' className='in-td'>\n          <table cellSpacing='0'>\n            <thead>\n              <tr>\n                <th>文件名</th>\n                <th>文件路径</th>\n              </tr>\n            </thead>\n            <tbody>\n              {item.scan_lic_info.map((sonItem, index) => (\n                <tr key={index}>\n                  <td>{sonItem.file_name}</td>\n                  <td>{sonItem.file_path}</td>\n                </tr>\n              ))}\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    ) : (\n      <></>\n    )\n  }\n\n  return (\n    <>\n      <div className='desc mt-20'>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          5.2 文件许可证\n        </div>\n      </div>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th className='expand' />\n            <th width='33%'>许可证名称</th>\n            <th>许可证标签</th>\n            <th>文件数量</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <React.Fragment key={item.id}>\n              <tr key={index}>\n                <td className='expandBtn'>\n                  {item.scan_lic_info.length === 0 ? (\n                    <></>\n                  ) : (\n                    <div\n                      className={expandArr.arr.includes(item.id) ? 'closed-icon' : 'expand-icon'}\n                      onClick={() => expClick(item, 'id')}\n                    />\n                  )}\n                </td>\n                <td>{item.license_name}</td>\n                <td>{item.tag}</td>\n                <td>{item.file_count}</td>\n              </tr>\n              {tableChildRenderer(item, 'id')}\n            </React.Fragment>\n          ))}\n        </tbody>\n      </table>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/license/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 7,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 29,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\nimport { Components } from './component.jsx'\nimport { File } from './file.jsx'\nimport { Version } from './version.jsx'\n\nexport default function () {\n  const { report_name } = window.reportData.project_info\n  const { component_license, file_license, project_license } = window.reportData.statistics.license\n  return (\n    <SecBox index='5' icon='license' title='许可证'>\n      <div className='desc'>\n        <p>\n          许可证分析目的是为检测开源组件中声明的许可证是否存在合规风险。\n          清源SCA数据库中有各种各样的开源许可证，除企业授权使用的许可证外，任何许可证都需要依据项目情况及许可要求，\n          考虑该许可证的使用是否合规，以避免存在潜在的合规风险。\n        </p>\n        <p>\n          在<span> {report_name} </span>检测过程中识别到<span> {component_license} </span>\n          种组件许可证，<span> {file_license} </span>种文件许可证，<span> {project_license} </span>\n          种项目许可证，许可证详情如下：\n        </p>\n      </div>\n      <Components />\n      <File />\n      <Version />\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/license/version.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'setTableList' is assigned a value but never used.",
+        "line": 3,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 33
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function Version() {\n  const [tableList, setTableList] = useState({\n    list: window.reportData.license_info.project_license_list\n  })\n  return (\n    <>\n      <div className='desc mt-20'>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          5.3 项目许可证\n        </div>\n      </div>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th width='33%'>许可证名称</th>\n            <th>标签</th>\n            <th>文件路径</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <React.Fragment key={index}>\n              <tr>\n                <td>{item.license_name}</td>\n                <td>{item.tag}</td>\n                <td>{item.license_file_path}</td>\n              </tr>\n            </React.Fragment>\n          ))}\n        </tbody>\n      </table>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/overView/element.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useState' is defined but never used.",
+        "line": 1,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 25
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'initBarChart1' is assigned a value but never used.",
+        "line": 66,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 66,
+        "endColumn": 20
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport * as echarts from 'echarts/core'\nimport { TitleComponent, GridComponent } from 'echarts/components'\nimport { BarChart, PieChart } from 'echarts/charts'\nimport { CanvasRenderer } from 'echarts/renderers'\n\necharts.use([GridComponent, BarChart, TitleComponent, PieChart, CanvasRenderer])\n\nlet myPieChart, pieOption\nlet totalNum = 0\n\nconst initPieChart = () => {\n  const { component_license, file_license, project_license } = window.reportData.statistics.license\n  totalNum = component_license + file_license + project_license\n  myPieChart = echarts.init(document.getElementById('elPieCharts'))\n  pieOption = {\n    title: {\n      left: 'center',\n      top: '40%',\n      text: `{a|总数}\\n{x|${totalNum}}`,\n      textStyle: {\n        color: '#333',\n        rich: {\n          a: {\n            fontSize: 12,\n            color: '#666666'\n          },\n          x: {\n            padding: [5, 0],\n            fontSize: 18,\n            fontWeight: 'bold',\n            color: '#333333'\n          }\n        }\n      }\n    },\n    label: {\n      alignTo: 'edge',\n      formatter: '{b}：{c}',\n      minMargin: 5,\n      edgeDistance: 10,\n      lineHeight: 15\n    },\n\n    series: [\n      {\n        type: 'pie',\n        radius: ['58%', '75%'],\n        itemStyle: {\n          color: (params) => {\n            return ['rgb(0,32,193)', 'rgb(101,65,164)', 'rgb(0,117,193)'][params.dataIndex]\n          }\n        },\n        data: [\n          { value: component_license, name: '组件许可证' },\n          { value: project_license, name: '项目许可证' },\n          { value: file_license, name: '文件许可证' }\n        ]\n      }\n    ]\n  }\n  pieOption && myPieChart.setOption(pieOption)\n}\n\nlet myBarChart, barOption\nconst initBarChart1 = () => {\n  myBarChart = echarts.init(document.getElementById('barCharts1'))\n  barOption = {\n    title: {\n      text: '组件',\n      top: 'center',\n      textStyle: {\n        fontSize: 14\n      }\n    },\n    xAxis: {\n      show: false,\n      type: 'value'\n    },\n    yAxis: {\n      show: false,\n      type: 'category'\n    },\n    grid: {\n      top: '0px',\n      left: '10%',\n      right: '0px',\n      bottom: '0px'\n    },\n    label: {\n      show: true,\n      formatter: '{b}: {@score}',\n      offset: [0, 0.5],\n      fontSize: 12,\n      color: '#fff'\n    },\n    series: [\n      {\n        name: 'component',\n        type: 'bar',\n        itemStyle: {\n          color: (params) => {\n            return ['rgb(101,65,164)', 'rgb(0,32,193)', 'rgb(20,117,193)'][params.dataIndex]\n          }\n        },\n        data: [\n          {\n            value: 50,\n            name: '无许可证组件'\n          },\n          {\n            value: 60,\n            name: '非最新版本组件'\n          },\n          {\n            value: 20,\n            name: '漏洞组件'\n          }\n        ]\n      }\n    ]\n  }\n  barOption && myBarChart.setOption(barOption)\n}\n\nlet myBarChart2, barOption2\nconst initBarChart2 = () => {\n  const { is_copyrights, is_not_copyrights } = window.reportData.statistics.file\n  myBarChart2 = echarts.init(document.getElementById('barCharts2'))\n  barOption2 = {\n    title: {\n      text: '文件',\n      top: 'center',\n      textStyle: {\n        fontSize: 14\n      }\n    },\n    xAxis: {\n      show: false,\n      type: 'value'\n    },\n    yAxis: {\n      show: false,\n      type: 'category'\n    },\n    grid: {\n      top: '0px',\n      left: '10%',\n      right: '55px',\n      bottom: '0px'\n    },\n    series: [\n      {\n        name: 'file',\n        type: 'bar',\n        itemStyle: {\n          color: (params) => {\n            return ['rgb(255,85,183)', 'rgb(222,4,129)'][params.dataIndex]\n          }\n        },\n        barWidth: '55%',\n        label: {\n          show: true,\n          formatter: '{@score}',\n          offset: [0, 0.5],\n          position: 'right',\n          fontSize: 12,\n          color: '#000'\n        },\n        data: [\n          {\n            value: is_not_copyrights,\n            name: '无版权'\n          },\n          {\n            value: is_copyrights,\n            name: '有版权'\n          }\n        ]\n      }\n    ]\n  }\n  barOption2 && myBarChart2.setOption(barOption2)\n}\n\nlet myBarChart3, barOption3\nconst initBarChart3 = () => {\n  const { indirect, direct } = window.reportData.statistics.dependency\n  myBarChart3 = echarts.init(document.getElementById('barCharts3'))\n  barOption3 = {\n    title: {\n      text: '依赖',\n      top: 'center',\n      textStyle: {\n        fontSize: 14\n      }\n    },\n    xAxis: {\n      show: false,\n      type: 'value'\n    },\n    yAxis: {\n      show: false,\n      type: 'category'\n    },\n    grid: {\n      top: '0px',\n      left: '10%',\n      right: '55px',\n      bottom: '0px'\n    },\n    series: [\n      {\n        name: 'component',\n        type: 'bar',\n        barWidth: '55%',\n        itemStyle: {\n          color: (params) => {\n            return ['rgb(131,163,228)', 'rgb(4,92,192)'][params.dataIndex]\n          }\n        },\n        label: {\n          show: true,\n          formatter: '{@score}',\n          position: 'right',\n          offset: [0, 0.5],\n          fontSize: 12,\n          color: '#000'\n        },\n        data: [\n          {\n            value: indirect,\n            name: '间接依赖'\n          },\n          {\n            value: direct,\n            name: '直接依赖'\n          }\n        ]\n      }\n    ]\n  }\n  barOption3 && myBarChart3.setOption(barOption3)\n}\n\nexport function Element() {\n  useEffect(() => {\n    initPieChart()\n    //  initBarChart1()\n    initBarChart2()\n    initBarChart3()\n  })\n  return (\n    <>\n      <div id='elPieCharts' className='charts'></div>\n      <div id='barCharts' className='charts'>\n        <div className='lenged'>\n          <div className='item' />\n          有版权文件\n          <div className='item' />\n          无版权文件\n          <div className='item' />\n          直接依赖\n          <div className='item' />\n          间接依赖\n        </div>\n        <div id='barCharts2'></div>\n        <div id='barCharts3'></div>\n      </div>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/overView/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 8,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 84,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\nimport { ChartContainer } from '../../component/ChartContainer/index.jsx'\nimport { Warn } from './warn.jsx'\nimport { Vulner } from './vulner.jsx'\nimport { Element } from './element.jsx'\n\nexport default function () {\n  const { report_name } = window.reportData.project_info\n  const { vun, strategy_alert, license, file, dependency, component } = window.reportData.statistics\n  return (\n    <SecBox index='1' icon='overview' title='报告概述'>\n      <div className='desc'>\n        <p>\n          清源SCA对<span>{report_name}</span>\n          进行了软件成分分析检测，软件成分分析期间，精确识别项目组成成分，识别项目、文件、组件使用的许可证，对开源合规风险分析提供支持；分析开源组件、代码片段中是否存在安全漏洞，并使用通用漏洞评估系统(CVSS)评测每个漏洞的严重程度，帮助确定漏洞的紧急度和重要度。检测分析结果如下:\n        </p>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          项目成分\n        </div>\n        <div className='box__project-ele fx'>\n          <div className='card__ele'>\n            <div className='card__ele-header'>组件</div>\n            <div className='card__ele-content'>{component.count}</div>\n          </div>\n          <div className='card__ele'>\n            <div className='card__ele-header'>许可证</div>\n            <div className='card__ele-content'>\n              {license.component_license + license.file_license + license.project_license}\n            </div>\n          </div>\n          <div className='card__ele'>\n            <div className='card__ele-header'>文件</div>\n            <div className='card__ele-content'> {file.is_copyrights + file.is_not_copyrights}</div>\n          </div>\n          <div className='card__ele'>\n            <div className='card__ele-header'>依赖</div>\n            <div className='card__ele-content'>{dependency.direct + dependency.indirect}</div>\n          </div>\n        </div>\n        <ul>\n          <li>\n            <span> {component.count} </span> 个开源组件，其中 <span> {component.risk_count} </span> 个开源组件存在漏洞\n          </li>\n          <li>\n            <span> {license.component_license} </span> 种组件许可证、 <span> {license.file_license} </span>\n            种文件许可证、 <span> {license.project_license} </span> 种项目许可证\n          </li>\n          <li>\n            <span> {file.is_copyrights + file.is_not_copyrights} </span> 个文件，其中有版权文件\n            <span> {file.is_copyrights} </span> 个，无版权文件 <span> {file.is_not_copyrights} </span> 个\n          </li>\n          <li>\n            <span> {dependency.direct + dependency.indirect} </span> 个依赖，其中直接依赖\n            <span> {dependency.direct} </span> 个，间接依赖 <span> {dependency.indirect} </span> 个\n          </li>\n          <li>\n            <span> {vun.total}</span> 个漏洞，其中超危 <span> {vun.super} </span> 个、高危 <span> {vun.high} </span>\n            个、中危\n            <span> {vun.mid} </span> 个、低危 <span> {vun.low} </span> 个。其中<span> {vun.is_public_poc} </span>\n            个漏洞存在可利用POC\n          </li>\n          <li>\n            <span> {strategy_alert.total} </span> 条策略告警，高危 <span> {strategy_alert.high} </span> 个、中危\n            <span> {strategy_alert.mid} </span> 个、低危\n            <span> {strategy_alert.low} </span> 个\n          </li>\n        </ul>\n      </div>\n      <div className='overview-container'>\n        <ChartContainer title='策略告警'>\n          <Warn />\n        </ChartContainer>\n        <ChartContainer title='漏洞'>\n          <Vulner />\n        </ChartContainer>\n        <ChartContainer title='成分' className='fx'>\n          <Element />\n        </ChartContainer>\n      </div>\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/overView/vulner.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useState' is defined but never used.",
+        "line": 1,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 25
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport * as echarts from 'echarts/core'\nimport { LabelLayout } from 'echarts/features'\nimport { TitleComponent } from 'echarts/components'\nimport { PieChart } from 'echarts/charts'\nimport { CanvasRenderer } from 'echarts/renderers'\n\necharts.use([LabelLayout, TitleComponent, PieChart, CanvasRenderer])\n\nlet myChart, option\nlet totalNum = 0\nconst initChart = () => {\n  const { low, mid, high, total } = window.reportData.statistics.vun\n  const _super = window.reportData.statistics.vun.super\n  myChart = echarts.init(document.getElementById('vCharts'))\n  totalNum = total\n  option = {\n    title: {\n      top: '40%',\n      left: 'center',\n      text: `{a|总数}`,\n      align: 'center',\n      subtext: `{x|${totalNum}}`,\n      textStyle: {\n        align: 'center',\n        color: '#333',\n        rich: {\n          a: {\n            fontSize: 12,\n            color: '#666666'\n          }\n        }\n      },\n      subtextStyle: {\n        align: 'center',\n        rich: {\n          x: {\n            fontSize: 16,\n            fontWeight: 'bold',\n            color: '#333333'\n          }\n        }\n      }\n    },\n    label: {\n      show: true,\n      formatter: '{b}：{c}',\n      minMargin: 5,\n      edgeDistance: 10,\n      lineHeight: 15\n    },\n\n    series: [\n      {\n        name: 'left',\n        type: 'pie',\n        radius: ['58%', '75%'],\n        itemStyle: {\n          color: (params) => {\n            return ['rgb(136,16,9)', 'rgb(204, 0, 0)', 'rgb(241, 163, 8)', 'rgb(0, 117, 193)'][params.dataIndex]\n          }\n        },\n        data: [\n          { value: _super, name: '超危' },\n          { value: high, name: '高危' },\n          { value: mid, name: '中危' },\n          { value: low, name: '低危' }\n        ]\n      }\n    ]\n  }\n  option && myChart.setOption(option)\n}\n\nexport function Vulner() {\n  useEffect(() => {\n    initChart()\n  })\n  return <div id='vCharts' className='charts'></div>\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/overView/warn.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useState' is defined but never used.",
+        "line": 1,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 25
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport * as echarts from 'echarts/core'\nimport { TitleComponent } from 'echarts/components'\nimport { PieChart } from 'echarts/charts'\nimport { CanvasRenderer } from 'echarts/renderers'\n\necharts.use([TitleComponent, PieChart, CanvasRenderer])\n\nlet myChart, option\nlet totalNum = 0\n\nconst initChart = () => {\n  const { low, mid, high } = window.reportData.statistics.strategy_alert\n  totalNum = low + mid + high\n  myChart = echarts.init(document.getElementById('warnCharts'))\n  option = {\n    title: {\n      left: 'center',\n      top: '40%',\n      text: `{a|总数}\\n{x|${totalNum}}`,\n      textStyle: {\n        color: '#333',\n        rich: {\n          a: {\n            fontSize: 12,\n            color: '#666666'\n          },\n          x: {\n            padding: 10,\n            fontSize: 16,\n            fontWeight: 'bold',\n            color: '#333333'\n          }\n        }\n      }\n    },\n    label: {\n      alignTo: 'edge',\n      formatter: '{b}：{c}',\n      minMargin: 5,\n      edgeDistance: 10,\n      lineHeight: 15\n    },\n    color: ['rgb(204, 0, 0)', 'rgb(241, 163, 8)', 'rgb(0, 117, 193)'],\n    series: [\n      {\n        type: 'pie',\n        radius: ['58%', '75%'],\n        data: [\n          { value: high, name: '高危' },\n          { value: mid, name: '中危' },\n          { value: low, name: '低危' }\n        ]\n      }\n    ]\n  }\n  option && myChart.setOption(option)\n}\n\nexport function Warn() {\n  useEffect(() => {\n    initChart()\n  })\n  return <div id='warnCharts' className='charts'></div>\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/policy/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 13,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 149,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\nimport { WarnBox } from '../../component/WarnBox/index.jsx'\n\nconst initFormData = {\n  strategy_name: '',\n  group_name: '',\n  alert_info: '',\n  strategy_risk_level: 'all',\n  hand_type: 'all'\n}\n\nexport default function () {\n  const { report_name } = window.reportData.project_info\n  const { total, low, mid, high } = window.reportData.statistics.strategy_alert\n\n  const riskLevelMap = new Map([\n    ['all', '全部'],\n    ['low', '低危'],\n    ['mid', '中危'],\n    ['high', '高危']\n  ])\n\n  const [formData, setFormData] = useState({\n    ...initFormData\n  })\n  const [tableList, setTableList] = useState({\n    list: window.reportData.strategy_info\n  })\n\n  function queryClick() {\n    filterList()\n  }\n\n  function filterList() {\n    let tempArr = []\n    for (const item of window.reportData.strategy_info) {\n      if (\n        item.strategy_name.indexOf(formData.strategy_name) >= 0 &&\n        item.group_name.indexOf(formData.group_name) >= 0 &&\n        item.alert_info.indexOf(formData.alert_info) >= 0 &&\n        (item.strategy_risk_level === formData.strategy_risk_level || formData.strategy_risk_level === 'all') &&\n        (item.hand_type === formData.hand_type || formData.hand_type === 'all')\n      ) {\n        tempArr.push(item)\n      }\n    }\n    setTableList({ list: tempArr })\n  }\n\n  function initClick() {\n    setFormData(initFormData)\n    setTableList({ list: window.reportData.strategy_info })\n  }\n\n  useEffect(() => {}, [formData])\n\n  return (\n    <SecBox index='2' icon='policy' title='策略告警'>\n      <div className='desc'>\n        <p>\n          清源SCA支持自定义检测第略，在针对不同的业务可制定您的自定义检测方案，划分策略告警等级，\n          <span>{report_name}</span>检测过程中触发了<span> {total} </span>条策略告警，告警详情如下:\n        </p>\n        <div className='fx'>\n          <WarnBox color='high' level='高危' value={high} />\n          <WarnBox color='mid' level='中危' value={mid} />\n          <WarnBox color='low' level='低危' value={low} />\n        </div>\n      </div>\n      <form className='search-box fx'>\n        <div className='form-item'>\n          <label>策略名: </label>\n          <input\n            placeholder='请输入'\n            value={formData.strategy_name}\n            onChange={(e) => setFormData({ ...formData, strategy_name: e.target.value })}></input>\n        </div>\n\n        <div className='form-item'>\n          <label>策略组: </label>\n          <input\n            placeholder='请输入'\n            value={formData.group_name}\n            onChange={(e) => setFormData({ ...formData, group_name: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>告警对象: </label>\n          <input\n            placeholder='请输入'\n            value={formData.alert_info}\n            onChange={(e) => setFormData({ ...formData, alert_info: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>告警等级: </label>\n          <select\n            onChange={(e) => setFormData({ ...formData, strategy_risk_level: e.target.value })}\n            value={formData.strategy_risk_level}>\n            <option value='all'>全部</option>\n            <option value='low'>低危</option>\n            <option value='mid'>中危</option>\n            <option value='high'>高危</option>\n          </select>\n        </div>\n\n        <div className='form-item'>\n          <label>处理状态: </label>\n          <select onChange={(e) => setFormData({ ...formData, hand_type: e.target.value })} value={formData.hand_type}>\n            <option value='all'>全部</option>\n            <option value='已忽略'>已忽略</option>\n            <option value='已处理'>已处理</option>\n            <option value='已确认'>已确认</option>\n            <option value='未操作'>未操作</option>\n          </select>\n        </div>\n        <button type='button' className='btn btn-secondary' onClick={() => initClick()}>\n          重置\n        </button>\n        <button type='button' className='btn btn-primary' onClick={() => queryClick()}>\n          查询\n        </button>\n      </form>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th width='12%'>策略名</th>\n            <th width='12%'>策略组</th>\n            <th>告警对象</th>\n            <th>告警详情</th>\n            <th width='9%'>告警等级</th>\n            <th width='9%'>处置状态</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <tr key={index}>\n              <td>{item.strategy_name}</td>\n              <td>{item.group_name}</td>\n              <td>{item.alert_info}</td>\n              <td>{item.obj_detail}</td>\n              <td>{riskLevelMap.get(item.strategy_risk_level)}</td>\n              <td>{item.hand_type}</td>\n            </tr>\n          ))}\n        </tbody>\n      </table>\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/vulner/Repair.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'total' is assigned a value but never used.",
+        "line": 3,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 3,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'count' is assigned a value but never used.",
+        "line": 4,
+        "column": 11,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 4,
+        "endColumn": 16
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'setTableList' is assigned a value but never used.",
+        "line": 6,
+        "column": 21,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 6,
+        "endColumn": 33
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 3,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState } from 'react'\nexport function Repair() {\n  const { total } = window.reportData.statistics.vun\n  const { count } = window.reportData.statistics.component\n\n  const [tableList, setTableList] = useState({\n    list: window.reportData.vun_info.cve_info_list\n  })\n\n  return (\n    <>\n      <div className='desc mt-20'>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          3.2 修复建议\n        </div>\n        <p>\n          对于漏洞的修复，清源SCA建议您根据组件的使用情况及影响程度，评估修复方式，下表中为您提供参考修复建议，详情如下：\n        </p>\n      </div>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th width='20%'>CVE编号</th>\n            <th>修复建议</th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <tr key={index}>\n              <td>{item.cve_num}</td>\n              <td>{item.cnnvd_announcement}</td>\n            </tr>\n          ))}\n        </tbody>\n      </table>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/vulner/index.jsx",
+    "messages": [
+      {
+        "ruleId": "react/display-name",
+        "severity": 2,
+        "message": "Component definition is missing display name",
+        "line": 7,
+        "column": 16,
+        "nodeType": "FunctionDeclaration",
+        "messageId": "noDisplayName",
+        "endLine": 14,
+        "endColumn": 2
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "import React from 'react'\nimport { SecBox } from '../../component/SecBox/index.jsx'\n\nimport { Repair } from './repair.jsx'\nimport { Overview } from './overview.jsx'\n\nexport default function () {\n  return (\n    <SecBox index='3' icon='vulner' title='漏洞'>\n      <Overview />\n      <Repair />\n    </SecBox>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/src/page/vulner/overview.jsx",
+    "messages": [
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'useEffect' is defined but never used.",
+        "line": 1,
+        "column": 27,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 1,
+        "endColumn": 36
+      },
+      {
+        "ruleId": "react/jsx-no-target-blank",
+        "severity": 2,
+        "message": "Using target=\"_blank\" without rel=\"noreferrer\" (which implies rel=\"noopener\") is a security risk in older browsers: see https://mathiasbynens.github.io/rel-noopener/#recommendations",
+        "line": 120,
+        "column": 21,
+        "nodeType": "JSXOpeningElement",
+        "messageId": "noTargetBlankWithoutNoreferrer",
+        "endLine": 120,
+        "endColumn": 59,
+        "fix": {
+          "range": [
+            3552,
+            3552
+          ],
+          "text": " rel=\"noreferrer\""
+        }
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 2,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 1,
+    "fixableWarningCount": 0,
+    "source": "import React, { useState, useEffect } from 'react'\nimport { WarnBox } from '../../component/WarnBox/index.jsx'\nimport { TableSort } from '../../component/TableSort/index.jsx'\n\nconst initFormData = {\n  cve_num: '',\n  cwe_id: '',\n  cvss3_base_level: 'all',\n  is_public_poc: 'all'\n}\n\nexport function Overview() {\n  const { report_name } = window.reportData.project_info\n  const { low, mid, high, total } = window.reportData.statistics.vun\n  const _spuer = window.reportData.statistics.vun.super\n  const { is_public_poc } = window.reportData.statistics.vun\n  const { count, risk_count } = window.reportData.statistics.component\n\n  const [formData, setFormData] = useState({\n    ...initFormData\n  })\n  const [tableList, setTableList] = useState({\n    list: window.reportData.vun_info.vun_info_list\n  })\n  const [expandArr, setExpandArr] = useState({\n    arr: []\n  })\n\n  const [cvss3Sort, setCvss3Sort] = useState(0)\n  const [componentCountSort, setcomponentCountSort] = useState(0)\n  function clickSort(_step) {\n    setCvss3Sort(_step)\n    let _list = [...tableList.list]\n    if (_step === 0) {\n      filterList()\n      return\n    } else if (_step === 1) {\n      _list.sort((pre, next) => {\n        return next.cvss3_base_score - pre.cvss3_base_score\n      })\n    } else if (_step === 2) {\n      _list.sort((pre, next) => {\n        return pre.cvss3_base_score - next.cvss3_base_score\n      })\n    }\n    setcomponentCountSort(0)\n    setTableList({ list: _list })\n  }\n\n  function clickSort1(_step) {\n    setcomponentCountSort(_step)\n    let _list = [...tableList.list]\n    if (_step === 0) {\n      filterList()\n      return\n    } else if (_step === 1) {\n      _list.sort((pre, next) => {\n        return next.component_count - pre.component_count\n      })\n    } else if (_step === 2) {\n      _list.sort((pre, next) => {\n        return pre.component_count - next.component_count\n      })\n    }\n    setCvss3Sort(0)\n    setTableList({ list: _list })\n  }\n\n  function queryClick() {\n    filterList()\n  }\n\n  function filterList() {\n    let tempArr = []\n    for (const item of window.reportData.vun_info.vun_info_list) {\n      if (\n        item.cve_num.indexOf(formData.cve_num) >= 0 &&\n        item.cwe_id.indexOf(formData.cwe_id) >= 0 &&\n        (item.cvss3_base_level === formData.cvss3_base_level || formData.cvss3_base_level === 'all') &&\n        (item.is_public_poc === formData.is_public_poc || formData.is_public_poc === 'all')\n      ) {\n        tempArr.push(item)\n      }\n    }\n    setTableList({ list: tempArr })\n  }\n\n  function initClick() {\n    setFormData(initFormData)\n    setTableList({ list: window.reportData.vun_info.vun_info_list })\n    setCvss3Sort(0)\n    setcomponentCountSort(0)\n  }\n\n  function expClick(item, key) {\n    const tempArr = expandArr.arr\n    let arrIndex = tempArr.indexOf(item[key])\n    arrIndex >= 0 ? tempArr.splice(arrIndex, 1) : tempArr.push(item[key])\n    setExpandArr({ arr: tempArr })\n  }\n\n  function tableChildRenderer(item) {\n    return expandArr.arr.includes(item.id) ? (\n      <tr>\n        <td colSpan='10' className='in-td'>\n          <table cellSpacing='0'>\n            <thead>\n              <tr>\n                <th>组件名</th>\n                <th>当前版本</th>\n                <th>组件链接</th>\n              </tr>\n            </thead>\n            <tbody>\n              {item.component_info_list.map((sonItem, index) => (\n                <tr key={index}>\n                  <td>{sonItem.component}</td>\n                  <td>{sonItem.version}</td>\n                  <td>\n                    <a href={sonItem.url} target='_blank'>\n                      {sonItem.url}\n                    </a>\n                  </td>\n                </tr>\n              ))}\n            </tbody>\n          </table>\n        </td>\n      </tr>\n    ) : (\n      <></>\n    )\n  }\n\n  return (\n    <>\n      <div className='desc'>\n        <div className='sub-title fx ai-c'>\n          <div className='dot' />\n          3.1 漏洞详情\n        </div>\n        <p>\n          <span>{report_name}</span> 中检测出：<span>{total}</span>个漏洞，<span> {count} </span>个开源组件，\n          <span> {risk_count} </span>\n          个开源组件存在漏洞，<span> {is_public_poc} </span>个漏洞存在可利用POC，漏洞详情如下：\n        </p>\n        <div className='fx'>\n          <WarnBox color='super' level='超危' value={_spuer} />\n          <WarnBox color='high' level='高危' value={high} />\n          <WarnBox color='mid' level='中危' value={mid} />\n          <WarnBox color='low' level='低危' value={low} />\n        </div>\n      </div>\n      <form className='search-box fx'>\n        <div className='form-item'>\n          <label>CVE编号: </label>\n          <input\n            placeholder='请输入'\n            value={formData.cve_num}\n            onChange={(e) => setFormData({ ...formData, cve_num: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>CWE编号: </label>\n          <input\n            placeholder='请输入'\n            value={formData.cwe_id}\n            onChange={(e) => setFormData({ ...formData, cwe_id: e.target.value })}></input>\n        </div>\n        <div className='form-item'>\n          <label>漏洞等级: </label>\n          <select\n            onChange={(e) => setFormData({ ...formData, cvss3_base_level: e.target.value })}\n            value={formData.cvss3_base_level}>\n            <option value='all'>全部</option>\n            <option value='超危'>超危</option>\n            <option value='高危'>高危</option>\n            <option value='中危'>中危</option>\n            <option value='低危'>低危</option>\n            {/* <option value='未评测'>未评测</option> */}\n          </select>\n        </div>\n        <div className='form-item'>\n          <label>可利用POC: </label>\n          <select\n            onChange={(e) => setFormData({ ...formData, is_public_poc: e.target.value })}\n            value={formData.is_public_poc}>\n            <option value='all'>全部</option>\n            <option value='是'>是</option>\n            <option value='否'>否</option>\n          </select>\n        </div>\n        <button type='button' className='btn btn-secondary' onClick={() => initClick()}>\n          重置\n        </button>\n        <button type='button' className='btn btn-primary' onClick={() => queryClick()}>\n          查询\n        </button>\n      </form>\n      <table cellSpacing='0'>\n        <thead>\n          <tr>\n            <th className='expand' />\n            <th>漏洞名称</th>\n            <th>CVE编号</th>\n            <th>CNNVD编号</th>\n            <th>CWE 编号</th>\n            <th width='9%'>漏洞等级</th>\n            <th width='12%'>\n              <TableSort name='CVSS3分值' clickSort={clickSort} stepNum={cvss3Sort} />\n            </th>\n            <th width='9%'>威胁类型</th>\n            <th>可利用POC</th>\n            <th width='9%'>\n              <TableSort name='组件数' clickSort={clickSort1} stepNum={componentCountSort} />\n            </th>\n          </tr>\n        </thead>\n        <tbody>\n          {tableList.list.map((item, index) => (\n            <React.Fragment key={item.id}>\n              <tr key={index}>\n                <td className='expandBtn'>\n                  {item.component_info_list.length === 0 ? (\n                    <></>\n                  ) : (\n                    <div\n                      className={expandArr.arr.includes(item.id) ? 'closed-icon' : 'expand-icon'}\n                      onClick={() => expClick(item, 'id')}\n                    />\n                  )}\n                </td>\n                <td>{item.cnnvd_vul_name}</td>\n                <td>{item.cve_num}</td>\n                <td>{item.cnnvd_num}</td>\n                <td>{item.cwe_id}</td>\n                <td>{item.cvss3_base_level}</td>\n                <td>{item.cvss3_base_score}</td>\n                <td>{item.cnnvd_threat}</td>\n                <td>{item.is_public_poc}</td>\n                <td>{item.component_count}</td>\n              </tr>\n              {tableChildRenderer(item, 'id')}\n            </React.Fragment>\n          ))}\n        </tbody>\n      </table>\n    </>\n  )\n}\n",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/webpack.common.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 1,
+        "column": 14,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 1,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 2,
+        "column": 30,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 2,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 3,
+        "column": 27,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 3,
+        "endColumn": 34
+      },
+      {
+        "ruleId": "no-unused-vars",
+        "severity": 2,
+        "message": "'Webpack' is assigned a value but never used.",
+        "line": 4,
+        "column": 7,
+        "nodeType": "Identifier",
+        "messageId": "unusedVar",
+        "endLine": 4,
+        "endColumn": 14
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 4,
+        "column": 17,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 4,
+        "endColumn": 24
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'module' is not defined.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 6,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'__dirname' is not defined.",
+        "line": 10,
+        "column": 28,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 10,
+        "endColumn": 37
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'__dirname' is not defined.",
+        "line": 46,
+        "column": 35,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 46,
+        "endColumn": 44
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 8,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const path = require('path')\nconst MiniCssExtractPlugin = require('mini-css-extract-plugin')\nconst HtmlWebpackPlugin = require('html-webpack-plugin')\nconst Webpack = require('webpack')\n\nmodule.exports = {\n    entry: './src/main.js',\n    output: {\n        filename: 'src/bundle.js',\n        path: path.resolve(__dirname, 'dist')\n    },\n    module: {\n        rules: [{\n                test: /\\.(js|jsx)$/,\n                exclude: /node_modules/,\n                use: {\n                    loader: 'babel-loader' //es6+转换es5\n                }\n            },\n            {\n                test: /\\.(s[ac]ss|css)$/,\n                use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']\n            },\n            {\n                test: /\\.(png|svg|jpg|jpeg|gif|webp|jfif)$/, //图片打包\n                loader: 'url-loader',\n                options: {\n                    limit: 10 * 1024,\n                    esModule: false,\n                    name: 'src/assets/img/[hash:8].[ext]'\n                },\n                type: 'javascript/auto'\n            }\n            // {  //html img url地址\n            //     test: /\\.(html|htm)$/i,\n            //     loader: 'html-loader',\n            //     options: {\n            //         esModule: false\n            //     }\n            // }\n        ]\n    },\n    plugins: [\n        new MiniCssExtractPlugin({ filename: 'src/main.css' }),\n        new HtmlWebpackPlugin({\n            favicon: path.resolve(__dirname, 'public/favicon.ico'),\n            template: './src/index.html'\n        })\n    ]\n}",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/webpack.dev.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 1,
+        "column": 19,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 1,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 2,
+        "column": 14,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 2,
+        "endColumn": 21
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 3,
+        "column": 16,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 3,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'module' is not defined.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 6,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'__dirname' is not defined.",
+        "line": 11,
+        "column": 34,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 11,
+        "endColumn": 43
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 5,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const { merge } = require('webpack-merge')\nconst path = require('path')\nconst common = require('./webpack.common.js')\n    // const webpack = require('webpack');\n\nmodule.exports = merge(common, {\n    mode: 'development',\n    //   devtool: 'inline-source-map', //控制台提示信息映射\n    devServer: {\n        static: {\n            directory: path.join(__dirname, 'src')\n        },\n        port: '8080',\n        open: false, //自动打开浏览器\n        hot: true //让webpackDevServer开启热更新功能\n    }\n})",
+    "usedDeprecatedRules": []
+  },
+  {
+    "filePath": "/Users/jiangzhi/Desktop/code/sectrend/sca-template-main/webpack.prod.js",
+    "messages": [
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 1,
+        "column": 19,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 1,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 2,
+        "column": 33,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 2,
+        "endColumn": 40
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 3,
+        "column": 24,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 3,
+        "endColumn": 31
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'require' is not defined.",
+        "line": 4,
+        "column": 16,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 4,
+        "endColumn": 23
+      },
+      {
+        "ruleId": "no-undef",
+        "severity": 2,
+        "message": "'module' is not defined.",
+        "line": 6,
+        "column": 1,
+        "nodeType": "Identifier",
+        "messageId": "undef",
+        "endLine": 6,
+        "endColumn": 7
+      },
+      {
+        "ruleId": "no-dupe-keys",
+        "severity": 2,
+        "message": "Duplicate key 'minimizer'.",
+        "line": 10,
+        "column": 9,
+        "nodeType": "ObjectExpression",
+        "messageId": "unexpected",
+        "endLine": 10,
+        "endColumn": 18
+      }
+    ],
+    "suppressedMessages": [],
+    "errorCount": 6,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": "const { merge } = require('webpack-merge') //引入配置文件合并工具\nconst OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')\nconst TerserJSPlugin = require('terser-webpack-plugin')\nconst common = require('./webpack.common.js') //引入公共配置\n\nmodule.exports = merge(common, {\n    mode: 'production',\n    optimization: {\n        minimizer: [new OptimizeCSSAssetsPlugin({})], //css压缩\n        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})] //js压缩\n    }\n})",
+    "usedDeprecatedRules": []
+  }
+]

@@ -1,0 +1,4 @@
+# 不扫描filePath目录的指定目录
+
+dist/*
+node_modules/*

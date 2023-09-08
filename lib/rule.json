@@ -1,0 +1,7 @@
+{
+  "vue/multi-word-component-names": "off",
+  "eqeqeq": [
+    2,
+    "allow-null"
+  ]
+}

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-const dsb = "z999";
-dsb = dsb * 88;
+const ddd = "z999";
+ddd = ddd * 88;
 const count = ref<number>(0);
 count.value = "9z";
 </script>

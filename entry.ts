@@ -24,11 +24,7 @@ function initEntry(argv: string[]) {
 
 function getArgv(argv: string[], key: ArgvKey) {
   const index = argv.findIndex((item) => item === key)
-  if (index !== -1) {
-    return argv[index + 1]
-  } else {
-    return null
-  }
+  return index !== -1 ? argv[index + 1] : null
 }
 
 initEntry(process.argv)
